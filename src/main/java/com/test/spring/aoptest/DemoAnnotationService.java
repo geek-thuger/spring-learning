@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class DemoAnnotationService {
-    @Action(name="注解式拦截add")
+    @Action(name="annotation point")
     public void add(){
         System.out.println("this is annotation add");
     }
