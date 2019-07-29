@@ -20,12 +20,12 @@ import java.nio.charset.Charset;
  */
 @Configuration
 @ComponentScan("com.test.spring.el")
-@PropertySource(value="classpath:com/test/spring/el/test.properties", ignoreResourceNotFound=true)
+@PropertySource("classpath:com/test/spring/resource/test.properties")
 public class ElConfig {
     @Value("I Love You!")
     private String normal;
 
-    @Value("#{SystemProperties['os.name']}")
+    @Value("#{systemProperties['os.name']}")
     private String osName;
 
     @Value("#{ T(java.lang.Math).random() * 100.0}")
@@ -34,13 +34,13 @@ public class ElConfig {
     @Value("#{demoService.another}")
     private String fromAnother;
 
-    @Value("classpath:com/test/spring/resource/test")
+    @Value("classpath:com/test/spring/resource/test.txt")
     private Resource testFile;
 
     @Value("http://www.baidu.com")
     private Resource testUrl;
-
-    @Value("${book.name}")
+//
+     @Value("${book.name}")
     private String bookName;
 
     @Autowired
@@ -58,9 +58,9 @@ public class ElConfig {
             System.out.println(osName);
             System.out.println(randomNumber);
             System.out.println(fromAnother);
-            System.out.println(IOUtils.toString(testFile.getInputStream(), Charset.defaultCharset()));
+//            System.out.println(IOUtils.toString(testFile.getInputStream(), Charset.defaultCharset()));
             System.out.println(IOUtils.toString(testUrl.getInputStream(), Charset.defaultCharset()));
-            System.out.println(bookName);
+//            System.out.println(bookName);
             System.out.println(environment.getProperty("book.author"));
         } catch (IOException e) {
             e.printStackTrace();
