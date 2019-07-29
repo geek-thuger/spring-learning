@@ -11,7 +11,7 @@ public class ProfileMain {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.getEnvironment().setActiveProfiles("prod");
         context.register(ProfileConfig.class);
-        context.register();
+        context.refresh();
 
         DemoBean demoBean = context.getBean(DemoBean.class);
 
