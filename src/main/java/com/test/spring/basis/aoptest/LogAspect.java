@@ -1,4 +1,4 @@
-package com.test.spring.aoptest;
+package com.test.spring.basis.aoptest;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
 @Aspect
 @Component
 public class LogAspect {
-    @Pointcut(value = "@annotation(com.test.spring.aoptest.Action)")
+    @Pointcut(value = "@annotation(com.test.spring.basis.aoptest.Action)")
     public void annotationPointCut(){};
 
     @After("annotationPointCut()")
@@ -28,7 +28,7 @@ public class LogAspect {
     System.out.println("annotation: "+action.name());
     }
 
-    @Before("execution(* com.test.spring.aoptest.DemoMethodService.*(..))")
+    @Before("execution(* com.test.spring.basis.aoptest.DemoMethodService.*(..))")
     public void before(JoinPoint joinPoint) {
     MethodSignature signature = (MethodSignature)joinPoint.getSignature();
     Method method = signature.getMethod();

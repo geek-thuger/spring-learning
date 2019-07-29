@@ -61,7 +61,7 @@
 
         <resources>
             <resource>
-                <directory>src/main/com/test/spring/resource</directory>
+                <directory>src/main/com/test/spring/basis/resource</directory>
                 <includes>
                     <include>**/*.properties</include>
                     <include>**/*.txt</include>
@@ -75,7 +75,7 @@
                 </excludes>
             </resource>
         </resources>
-    </build>
 
+    </build>
 
 </project>

@@ -1,4 +1,4 @@
-package com.test.spring.scope;
+package com.test.spring.basis.scope;
 
 import org.springframework.stereotype.Service;
 

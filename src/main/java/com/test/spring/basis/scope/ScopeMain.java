@@ -1,4 +1,4 @@
-package com.test.spring.scope;
+package com.test.spring.basis.scope;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author pnc
  * @date 2019-07-28.
  */
-public class Main {
+public class ScopeMain {
     public static void main (String [] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ScopeConfig.class);
         DemonSingletonService singletonService1 = context.getBean(DemonSingletonService.class);

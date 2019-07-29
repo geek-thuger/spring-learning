@@ -1,4 +1,4 @@
-package com.test.spring.prepost;
+package com.test.spring.basis.prepost;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

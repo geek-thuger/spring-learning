@@ -1,4 +1,4 @@
-package com.test.spring.el;
+package com.test.spring.basis.el;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.test.spring.el;
+package com.test.spring.basis.el;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +19,8 @@ import java.nio.charset.Charset;
  * @date 2019-07-28.
  */
 @Configuration
-@ComponentScan("com.test.spring.el")
-@PropertySource("classpath:com/test/spring/resource/test.properties")
+@ComponentScan("com.test.spring.basis.el")
+@PropertySource("classpath:com/test/spring/basis/resource/test.properties")
 public class ElConfig {
     @Value("I Love You!")
     private String normal;
@@ -34,7 +34,7 @@ public class ElConfig {
     @Value("#{demoService.another}")
     private String fromAnother;
 
-    @Value("classpath:com/test/spring/resource/test.txt")
+    @Value("classpath:com/test/spring/basis/resource/test.txt")
     private Resource testFile;
 
     @Value("http://www.baidu.com")

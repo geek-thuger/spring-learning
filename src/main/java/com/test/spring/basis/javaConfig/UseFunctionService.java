@@ -1,4 +1,4 @@
-package com.test.spring.javaConfig;
+package com.test.spring.basis.javaConfig;
 
 /**
  * @author pnc

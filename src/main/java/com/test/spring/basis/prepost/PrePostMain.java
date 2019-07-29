@@ -1,4 +1,4 @@
-package com.test.spring.prepost;
+package com.test.spring.basis.prepost;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

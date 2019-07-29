@@ -1,4 +1,4 @@
-package com.test.spring.aoptest;
+package com.test.spring.basis.aoptest;
 
 import java.lang.annotation.*;
 

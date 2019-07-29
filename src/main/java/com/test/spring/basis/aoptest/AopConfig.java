@@ -1,4 +1,4 @@
-package com.test.spring.aoptest;
+package com.test.spring.basis.aoptest;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @date 2019-07-28.
  */
 @Configuration
-@ComponentScan("com.test.spring.aoptest")
+@ComponentScan("com.test.spring.basis.aoptest")
 @EnableAspectJAutoProxy
 public class AopConfig {
 
