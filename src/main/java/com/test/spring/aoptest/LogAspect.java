@@ -25,14 +25,14 @@ public class LogAspect {
     MethodSignature signature = (MethodSignature) joinPoint.getSignature();
     Method method = signature.getMethod();
     Action action = method.getAnnotation(Action.class);
-    System.out.println("annotation:"+action.name());
+    System.out.println("annotation: "+action.name());
     }
 
     @Before("execution(* com.test.spring.aoptest.DemoMethodService.*(..))")
     public void before(JoinPoint joinPoint) {
     MethodSignature signature = (MethodSignature)joinPoint.getSignature();
     Method method = signature.getMethod();
-    System.out.println("methods" + method.getName());
+    System.out.println("methods: " + method.getName());
     }
 
 }
